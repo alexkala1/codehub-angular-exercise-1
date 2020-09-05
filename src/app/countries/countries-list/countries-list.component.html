@@ -1,10 +1,10 @@
-<div class="row justify-content-center">
-	<div *ngFor="let country of countries" class="col-2 px-4 mx-2 my-2 border">
-		<img src="{{ country.flag }}" alt="{{ country.flag }}" class="img-fluid">
-		<ul class="align-content-end">
-			<li>Name: {{ country.name }}</li>
-			<li>Capital: {{ country.capital }}</li>
-			<li>Region: {{ country.region }}</li>
-		</ul>
+<div class="row">
+	<div class="card" *ngFor="let country of countries" class="col-3" style="width: 18rem;">
+		<img class="card-img-top" src="{{ country.flag }}" alt="{{ country.flag }}">
+		<div class="card-body">
+			<h5 class="card-title">Name: {{ country.name }}</h5>
+			<p class="card-text">The country {{ country.name }} is located in the region of {{ country.region }} and its
+				capital is {{ country.capital }}</p>
+		</div>
 	</div>
 </div>
