@@ -1,10 +1,10 @@
 <div class="row justify-content-center">
-	<div *ngFor="let country of countries" class="col-3 px-1 border">
+	<div *ngFor="let country of countries" class="col-2 px-4 mx-2 my-2 border">
 		<img src="{{ country.flag }}" alt="{{ country.flag }}" class="img-fluid">
-		<ul>
-			<li>{{ country.name }}</li>
-			<li>{{ country.capital }}</li>
-			<li>{{ country.region }}</li>
+		<ul class="align-content-end">
+			<li>Name: {{ country.name }}</li>
+			<li>Capital: {{ country.capital }}</li>
+			<li>Region: {{ country.region }}</li>
 		</ul>
 	</div>
 </div>
