@@ -5,12 +5,12 @@ import { CountriesListComponent } from './countries-list/countries-list.componen
 
 
 @NgModule({
-  declarations: [CountriesListComponent],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    CountriesListComponent
-  ]
+	declarations: [CountriesListComponent],
+	imports: [
+		CommonModule
+	],
+	exports: [
+		CountriesListComponent
+	]
 })
 export class CountriesModule { }
