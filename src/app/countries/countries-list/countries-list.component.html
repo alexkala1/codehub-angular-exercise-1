@@ -1,1 +1,10 @@
-<p>countries-list works!</p>
+<div class="row justify-content-center">
+	<div *ngFor="let country of countries" class="col-3 px-1 border">
+		<img src="{{ country.flag }}" alt="{{ country.flag }}" class="img-fluid">
+		<ul>
+			<li>{{ country.name }}</li>
+			<li>{{ country.capital }}</li>
+			<li>{{ country.region }}</li>
+		</ul>
+	</div>
+</div>
