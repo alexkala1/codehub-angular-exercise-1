@@ -8,6 +8,9 @@ import { CountriesListComponent } from './countries-list/countries-list.componen
   declarations: [CountriesListComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    CountriesListComponent
   ]
 })
 export class CountriesModule { }
